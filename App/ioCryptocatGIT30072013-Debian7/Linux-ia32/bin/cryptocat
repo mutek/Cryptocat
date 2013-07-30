@@ -1,0 +1,34 @@
+#!/usr/bin/env sh
+# )A( - Andromeda
+#
+# startCryptocat wrapper
+#
+# (c) 2010-2013 Luca Cappelletti <luca.cappelletti@gmail.com>
+#
+# copyleft GNU/GPL all rights reserved
+#
+# do not forget now you have .cache/Volatile full private temp folder service
+# made by startApp
+
+options="$@"
+
+APP_NAME=Cryptocat
+APP_RELEASE=GIT30072013
+APP_KERNEL=Linux
+APP_OS=Debian7
+APP_PLATFORM=ia32
+APP_ROOT=io$APP_NAME$APP_RELEASE-$APP_OS
+
+BIN_DIR=/home/$APP_NAME/.App/$APP_ROOT/$APP_KERNEL-$APP_PLATFORM/bin
+CRYPTOCAT=/home/$APP_NAME/.App/$APP_ROOT/$APP_KERNEL-$APP_PLATFORM/bin/core
+SANDBOX_HOME=$APP_NAME
+
+export LD_LIBRARY_PATH=/home/$APP_NAME/.App/$APP_ROOT/$APP_KERNEL-$APP_PLATFORM/support:/home/$APP_NAME/.App/$APP_ROOT/$APP_KERNEL-$APP_PLATFORM/lib:$LD_LIBRARY_PATH
+export PATH=/home/$APP_NAME/.App/$APP_ROOT/$APP_KERNEL-$APP_PLATFORM/bin:$PATH
+
+cd $BIN_DIR
+
+./nw --no-toolbar --data-path=/tmp/Cryptocat --url=file://$CRYPTOCAT/index.html
+
+
+

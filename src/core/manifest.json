@@ -1,0 +1,26 @@
+{
+	"main" : "index.html",
+	"manifest_version": 2,
+	"name": "Cryptocat",
+	"description": "Have encrypted, private conversations. Cryptocat is an open source encrypted instant messaging platform.",
+	"version": "2.1.12",
+        "keywords": [ "encryption" , "crypto","js" , "web" ],
+  "window": {
+    "toolbar": false,
+    "width": 1200,
+    "height": 600,
+    "position": "mouse",
+    "min_width": 300,
+    "min_height": 500,
+    "frame": false,
+    "show": false,
+    "fullscreen": false
+  },
+  "dependencies": {
+    "jQuery": "1.7.x",
+    "marked": "0.2.x",
+    "handlebars": "1.0.x",
+    "string": "1.3.x",
+    "mousetrap": "0.0.1"
+  }
+}

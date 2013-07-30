@@ -1,0 +1,38 @@
+{
+	"name": "cryptocat",
+	"version": "2.1.12",
+	"description": "Web Instant Messaging App With Accessible Encryption",
+	"main": "index.js",
+	"directories": {
+		"test": "test"
+	},
+	"dependencies": {
+		"express": "3.2.5"
+	},
+	"devDependencies": {
+		"lodash": "1.1.x",
+		"mocha": "1.8.x",
+		"chai": "1.5.x",
+		"sinon": "1.6.x",
+		"jshint": "2.1.3"
+	},
+	"bin": {
+		"cryptocat": "src/standaloneServer.js"
+	},
+	"scripts": {
+		"test": "mocha --ui exports --reporter spec test/chrome/js/*.test.js",
+		"start": "node src/standaloneServer.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/cryptocat/cryptocat.git"
+	},
+	"keywords": [
+		"encryption",
+		"crypto",
+		"js",
+		"web"
+	],
+	"author": "Nadim Kobeissi <nadim@crypto.cat>",
+	"license": "AGPL3"
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+	<Description about="urn:mozilla:install-manifest">
+		<em:id>cryptocat@crypto.cat</em:id>
+		<em:name>Cryptocat</em:name>
+		<em:version>2.1.12</em:version>
+		<em:type>2</em:type>
+		<em:creator>the Cryptocat Project</em:creator>
+		<em:description>Have encrypted, private conversations. Cryptocat is an open source encrypted instant messaging platform.</em:description>
+		<em:homepageURL>https://crypto.cat</em:homepageURL>
+		<em:iconURL>chrome://cryptocat/content/data/icon-48.png</em:iconURL>
+
+		<em:targetApplication>
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>9.0</em:minVersion>
+				<em:maxVersion>24.0</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+	</Description>      
+</RDF>

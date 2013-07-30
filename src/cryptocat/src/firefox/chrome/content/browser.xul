@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://cryptocat/skin/skin.css" type="text/css"?> 
+<!DOCTYPE cryptocat SYSTEM "chrome://cryptocat/locale/translations.dtd">
+<overlay id="sample" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+		<script type="text/javascript" src="cryptocat.js" />
+		
+		<menupopup id="menu_ToolsPopup"> 
+			<menuitem label="Cryptocat" key="cryptocatRunKey" oncommand="cryptocat.run()"/> 
+		</menupopup>
+		
+		<keyset>
+			<key id="cryptocatRunKey" modifiers="alt shift" key="C" oncommand="cryptocat.run()"/>
+		</keyset>
+		
+		<addonbar id="status-bar">
+			<statusbarpanel id="cryptocatStatusbarIcon" class="statusbarpanel-iconic" src="chrome://cryptocat/skin/bar.png" tooltiptext="&opencryptocat;" onclick="cryptocat.run()" />
+		</addonbar>
+		
+		<toolbarpalette id="BrowserToolbarPalette">
+			<toolbarbutton id="cryptocatToolbarButton" label="Cryptocat" tooltiptext="&opencryptocat;" oncommand="cryptocat.run()"/>
+		</toolbarpalette>
+		
+		<vbox id="appmenuSecondaryPane">
+			<menuitem id="cryptocatMenuItem"
+				label="Cryptocat"
+				accesskey="cryptocatRunKey"
+				oncommand="cryptocat.run()"
+				insertafter="appmenu_addons" 
+				class="menuitem-iconic"
+				image="chrome://cryptocat/skin/menu.png" />
+		</vbox>
+</overlay>
